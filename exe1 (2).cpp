@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <limits>
+#include <Windows.h>
 using namespace std;
 
 struct pessoa{
@@ -156,6 +157,7 @@ void excluirpessoa(fstream& arquivo, pessoa cadastros[]){
 
 
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
     fstream arquivo("animais_exoticos.txt");
     pessoa cadastros[5];
 
